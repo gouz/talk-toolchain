@@ -1,0 +1,13 @@
+:icons: font
+:icon-set: pf
+:doctype: book
+:revealjs_theme: moon
+:revealjs_history: true
+:revealjsdir: ./reveal.js
+:revealjs_controls: true 
+:revealjs_transition: slide
+:revealjs_backgroundTransition: none
+:revealjs_autoPlayMedia: true
+:revealjs_preloadIframes: true
+:imagesdir: ./assets
+:customcss: ./assets/custom.css

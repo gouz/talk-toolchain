@@ -1,0 +1,28 @@
+/*
+:root {
+    --r-link-color: rgb(37, 186, 146);
+    --r-background-color: rgb(18, 18, 18);
+    --r-heading-color: rgba(255, 255, 255, 0.97);
+    --r-main-color: rgba(255, 255, 255, 0.87);
+}
+
+.reveal strong, .reveal b {
+    color: var(--r-link-color);
+}
+
+.reveal-viewport {
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reveal-viewport::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(18, 18, 14, 0.70);
+    content: "";
+}
+*/

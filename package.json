@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@asciidoctor/core": "^2.0.0-rc.1",
+    "@asciidoctor/reveal.js": "5.0.0-rc.1",
+    "asciidoctor": "^2.2.6",
+    "decktape": "^3.4.1",
+    "dotenv": "^16.0.3",
+    "node-scp": "^0.0.21",
+    "reveal-notes-server": "^0.1.0"
+  },
+  "scripts": {
+    "conv": "rm -rf dist && mkdir dist && npx asciidoctor-revealjs presentation/index.ad && mv presentation/index.html dist/index.html && node tweak.js",
+    "pdf": "pnpm decktape http://127.0.0.1:8080/index.html ./presentation.pdf --size=2339x1654",
+    "present": "cd dist && node ../node_modules/reveal-notes-server"
+  }
+}
