@@ -9,6 +9,8 @@ fs.readFile(file, "utf8", function (err, data) {
     `
       <script src="gamepad.js"></script>
       <script src="colors.js"></script>
+      <script src="zoom.js"></script>
+      <script src="assets/custom.js"></script>
       <script src="socket.io/socket.io.js"></script>
       <script src="node_modules/reveal-notes-server/client.js"></script>
       </body>
@@ -27,7 +29,13 @@ fs.cpSync(
   "./dist/node_modules/reveal-notes-server/client.js"
 );
 
-const constants = ["reveal.js", "favicon.ico", "gamepad.js", "colors.js"];
+const constants = [
+  "reveal.js",
+  "favicon.ico",
+  "gamepad.js",
+  "colors.js",
+  "zoom.js",
+];
 
 constants.forEach((fileOrDir) => {
   fs.cpSync(`./public/${fileOrDir}`, `./dist/${fileOrDir}`, {

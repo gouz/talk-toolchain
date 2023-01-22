@@ -9,7 +9,7 @@
     "reveal-notes-server": "^0.1.0"
   },
   "scripts": {
-    "conv": "rm -rf dist && mkdir dist && npx asciidoctor-revealjs presentation/index.ad && mv presentation/index.html dist/index.html && node tweak.js",
+    "convert": "rm -rf dist && mkdir dist && npx asciidoctor-revealjs presentation/index.ad && mv presentation/index.html dist/index.html && node tweak.js",
     "pdf": "pnpm decktape http://127.0.0.1:8080/index.html ./presentation.pdf --size=2339x1654",
     "present": "cd dist && node ../node_modules/reveal-notes-server"
   }
